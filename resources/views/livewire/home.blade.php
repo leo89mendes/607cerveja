@@ -16,7 +16,7 @@
                     É por isso que nos empenhamos em oferecer experiências inesquecíveis"
                 </cite> 
             </div>
-            <a id="top" href="#totop" class="max-w-[70px] btn_top bg-[#ffc123] z-10 mb-10 rounded-full">
+            <a id="top" href="#totop" class="max-w-[70px] btn_top bg-[#ffc123] z-10 md:mb-10 mb-16 rounded-full">
                 <div class="arrow p-2 h-[70px] w-[70px]">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                         viewBox="0 0 32 32" xml:space="preserve">
