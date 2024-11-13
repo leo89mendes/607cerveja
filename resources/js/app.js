@@ -173,6 +173,7 @@ function elementsPos(){
         document.getElementById('el_'+i).style.opacity = 0;
         document.getElementById('el_'+i).style.position = "absolute";
         document.getElementById('el_'+i).style.backgroundImage = "url(/storage/assets/img/" + elements[i].image + ")"; 
+        document.getElementById('el_'+i).style.backgroundRepeat = "no-repeat";
         document.getElementById('el_'+i).style.top = elements[i].top + hScreen + 'px';
         document.getElementById('el_'+i).style.left = elements[i].pos == 'right' ? wScreen + 'px' : -elements[i].width  +'px';
         document.getElementById('el_'+i).style.width = elements[i].width + 'px';
