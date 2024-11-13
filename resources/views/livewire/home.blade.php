@@ -10,25 +10,25 @@
             <div class=" z-10 w-full flex justify-center">
                 <img class="h-[200px] md:my-8 my-4" src="{{ asset('storage/assets/img/logo_white.png')}}" alt="">
             </div>
-            <div class="z-10 h-full flex flex-col items-center w-full md:justify-center sm:justify-normal text-white md:my-12 my-8">
+            <div class="z-10 flex flex-col items-center w-full md:justify-center sm:justify-normal text-white my-auto">
                 <cite class="md:text-[2.5rem] text-[2rem] md:leading-[3.5rem] leading-[3rem] text-center md:mx-[8rem] mx-4">
                     "Acreditamos que os momentos mais especiais são vividos juntos. 
                     É por isso que nos empenhamos em oferecer experiências inesquecíveis"
-                </cite>
-                <a id="top" href="#totop" class="mt-[4rem] max-w-[70px] btn_top bg-[#ffc123] z-10 rounded-full">
-                    <div class="arrow p-2 h-[70px] w-[70px]">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                            viewBox="0 0 32 32" xml:space="preserve">
-                        <g>
-                            <g id="arrow_x5F_down">
-                                <path style="fill:#030104;" d="M32,16.016l-5.672-5.664c0,0-3.18,3.18-6.312,6.312V0h-8.023v16.664l-6.32-6.32L0,16.016L16,32
-                                    L32,16.016z"/>
-                            </g>
-                        </g>
-                        </svg>
-                    </div>
-                </a>  
+                </cite> 
             </div>
+            <a id="top" href="#totop" class="max-w-[70px] btn_top bg-[#ffc123] z-10 mb-10 rounded-full">
+                <div class="arrow p-2 h-[70px] w-[70px]">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 32 32" xml:space="preserve">
+                    <g>
+                        <g id="arrow_x5F_down">
+                            <path style="fill:#030104;" d="M32,16.016l-5.672-5.664c0,0-3.18,3.18-6.312,6.312V0h-8.023v16.664l-6.32-6.32L0,16.016L16,32
+                                L32,16.016z"/>
+                        </g>
+                    </g>
+                    </svg>
+                </div>
+            </a> 
         </div>
     </header>
 
