@@ -174,7 +174,7 @@
         </ul>
     </div>
     <section id="contact" class="flex items-end mt-[5rem] h-[400px] justify-center bg-center bg-no-repeat" style="background-image: url({{ asset('storage/assets/img/beer_footer.png') }})">
-        <div class="sm:hidden md:flex px-2 py-2 w-full bg-[#000000] justify-center text-white text-[0.8rem] flex-row">
+        <div class="text-center md:texf-left md:flex px-2 py-2 w-full bg-[#000000] justify-center text-white text-[0.8rem] flex-row">
             Todos os Diretos Reservados à 607 Cerveja Artesanal <span class="mx-1">| Desenvolvido por </span><a class=" cursor-pointer hover:underline" href="https://dreamsintocodes.com" target="_blank"><b>Dreams Into Codes</b></a>
         </div>
     </section> 
