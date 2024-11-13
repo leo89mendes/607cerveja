@@ -10,18 +10,19 @@ window.addEventListener('resize', function(){
 window.addEventListener('scroll', function(){
     var Elcontainer = document.getElementById('element_'+contador);
     var el = document.getElementById('el_'+count);
+    console.log(window.scrollY + ' ' + getElementYPosition(el))
     if(window.scrollY > (getElementYPosition(el) - 300) && count < elements.length)
     {
         animeEl(document.getElementById('el_'+count))
     };
 
-    if( window.scrollY >= (getElementYPosition(Elcontainer) - 500) && document.querySelectorAll('.element').length >= contador)
+    if( window.scrollY >= (getElementYPosition(Elcontainer) - 430) && document.querySelectorAll('.element').length >= contador)
     {
         fadeIn(document.getElementById('element_'+contador));
     }
 })
 document.addEventListener("DOMContentLoaded", function(){
-    if(!isMobile())
+   // if(!isMobile())
         elementsPos();
 });
 function elementsPos(){
@@ -31,7 +32,7 @@ function elementsPos(){
         elements = [
             {
                 "image": 'mexeripa01.png',
-                "top":50,
+                "top":-18,
                 "left":280,
                 "width": 515,
                 "height": 488,
@@ -98,20 +99,20 @@ function elementsPos(){
         elements = [
             {
                 "image": 'mexeripa01_mobile.png',
-                "top":50,
-                "left":280,
-                "width": 132,
-                "height": 133,
+                "top":-18,
+                "left":400,
+                "width": 258,
+                "height": 244,
                 'pos': 'right'
             },
-            {
-                "image": 'mel01_mobile.png',
-                "top":1000,
-                "left":0,
-                "width": 140,
-                "height": 114,
-                'pos': 'left'
-            },
+            // {
+            //     "image": 'mel01.png',
+            //     "top":1000,
+            //     "left":0,
+            //     "width": 540,
+            //     "height": 440,
+            //     'pos': 'left'
+            // },
             // {
             //     "image": 'beer_transparent_03.png',
             //     "top":800,
@@ -162,11 +163,12 @@ function elementsPos(){
             // }
         ];
     }
-    
+    console.log(elements.length)
     for (let i = 0; i < elements.length; i++) {
         let el = document.createElement('div');
-        el.className = 'elements'
+        el.className = 'elements';
         el.id = 'el_'+i;
+        console.log(el)
         document.getElementById('body').appendChild(el);
         document.getElementById('el_'+i).style.opacity = 0;
         document.getElementById('el_'+i).style.position = "absolute";

@@ -32,7 +32,7 @@
         </div>
     </header>
 
-    <div id="element_1" class="element flex flex-col md:flex-row justify-center md:mt-[10rem] mt-[5rem]">
+    <div id="element_1" class="element flex flex-col md:flex-row justify-center md:mt-[10rem] mt-[7rem]">
         <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] pb-0 mb-[2rem] md:mb-[3rem] bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2px">
             <img class="shadow z-40 border-8 border-white" src="{{ asset('storage/assets/img/beer09.jpg')}}" alt="">
         </div>
@@ -113,7 +113,7 @@
             </figure>
         </div>
     </section>
-    <section id="element_5" class="element contact shadow mt-[10rem] bg-[#323438] md:py-8 py-4 px-4 rounded-[25px] md:w-6/12 md:mx-auto mx-8">
+    <section id="element_5" class="element contact shadow_form mt-[10rem] bg-[#323438] md:py-8 py-4 px-4 rounded-[25px] md:w-6/12 md:mx-auto mx-8">
         <h1 class="text-[#ffc123] px-2 font-semibold text-[2rem]">FALE CONOSCO<h1>
         <form method="POST" action="" id="ContactForm" accept-charset="UTF-8" class="isolate">
             @csrf
