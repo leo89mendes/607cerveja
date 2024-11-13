@@ -24,6 +24,10 @@
             }
         </style>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet">
+
         @filamentStyles
         @vite('resources/css/app.css')
     </head>

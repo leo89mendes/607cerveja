@@ -110,7 +110,7 @@
             </figure>
         </div>
     </section>
-    <section id="element_5" class="element contact shadow mt-[10rem] bg-[#323438] md:py-8 px-4 rounded-[25px] md:w-6/12 md:mx-auto mx-8">
+    <section id="element_5" class="element contact shadow mt-[10rem] bg-[#323438] md:py-8 py-4 px-4 rounded-[25px] md:w-6/12 md:mx-auto mx-8">
         <h1 class="text-[#ffc123] px-2 font-semibold text-[2rem]">FALE CONOSCO<h1>
         <form method="POST" action="" id="ContactForm" accept-charset="UTF-8" class="isolate">
             @csrf
@@ -174,7 +174,7 @@
         </ul>
     </div>
     <section id="contact" class="flex items-end mt-[5rem] h-[400px] justify-center bg-center bg-no-repeat" style="background-image: url({{ asset('storage/assets/img/beer_footer.png') }})">
-        <div class="px-2 py-2 w-full bg-[#000000] flex justify-center text-white text-[0.8rem] flex-row">
+        <div class="sm:hidden md:flex px-2 py-2 w-full bg-[#000000] justify-center text-white text-[0.8rem] flex-row">
             Todos os Diretos Reservados à 607 Cerveja Artesanal <span class="mx-1">| Desenvolvido por </span><a class=" cursor-pointer hover:underline" href="https://dreamsintocodes.com" target="_blank"><b>Dreams Into Codes</b></a>
         </div>
     </section> 
