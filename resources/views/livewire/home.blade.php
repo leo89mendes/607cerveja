@@ -1,34 +1,37 @@
 <div id="container" class="w-full">
-    <header id="header" class="flex bg-black flex-col items-center w-full md:h-screen">
-        <div class="absolute overflow-hidden top-0 left-0 w-full  md:h-screen">
-            <video class="gfade grayscale aspect-video" width="100%" autoplay muted loop>
+    <header id="header">
+        <div class="video-background">
+            <video class="gfade grayscale aspect-video" width="100%" autoplay muted loop playsinline>
                 <source src="{{ asset('storage/assets/video/video_beer.mp4') }}" type="video/mp4">
                 <source src="{{ asset('storage/assets/video/video_beer.mp4') }}" type="video/ogg">                    
             </video>
         </div>
-        <div class=" z-10 w-full flex justify-center">
-            <img class="md:h-[200px] h-[110px] md:my-8 my-4" src="{{ asset('storage/assets/img/logo_white.png')}}" alt="">
-        </div>
-        <div class=" z-10 flex flex-col items-center w-full justify-center text-white my-2 md:my-8">
-            <cite class="md:text-[1.5rem] lg:text-[2.5rem] line text-sm md:leading-[3.5rem] text-center md:mx-[8rem] mx-4">
-                "Acreditamos que os momentos mais especiais são vividos juntos. 
-                É por isso que nos empenhamos em oferecer experiências inesquecíveis"
-            </cite>
-            <a id="top" href="#totop" class="md:mt-[8rem] mt-4 md:max-w-[70px] max-w-[35px] btn_top bg-[#ffc123] z-10 rounded-full">
-                <div class="arrow p-2 md:h-[70px] md:w-[70px] h-[35px] w-[35px]">
-                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                        viewBox="0 0 32 32" xml:space="preserve">
-                    <g>
-                        <g id="arrow_x5F_down">
-                            <path style="fill:#030104;" d="M32,16.016l-5.672-5.664c0,0-3.18,3.18-6.312,6.312V0h-8.023v16.664l-6.32-6.32L0,16.016L16,32
-                                L32,16.016z"/>
+        <div class="h-screen flex items-center flex-col">
+            <div class=" z-10 w-full flex justify-center">
+                <img class="h-[200px] md:my-8 my-4" src="{{ asset('storage/assets/img/logo_white.png')}}" alt="">
+            </div>
+            <div class="z-10 h-full flex flex-col items-center w-full md:justify-center sm:justify-normal text-white my-12">
+                <cite class="text-[2.5rem] line text-sm leading-[3.5rem] text-center md:mx-[8rem] mx-4">
+                    "Acreditamos que os momentos mais especiais são vividos juntos. 
+                    É por isso que nos empenhamos em oferecer experiências inesquecíveis"
+                </cite>
+                <a id="top" href="#totop" class="mt-[8rem] max-w-[70px] btn_top bg-[#ffc123] z-10 rounded-full">
+                    <div class="arrow p-2 h-[70px] w-[70px]">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            viewBox="0 0 32 32" xml:space="preserve">
+                        <g>
+                            <g id="arrow_x5F_down">
+                                <path style="fill:#030104;" d="M32,16.016l-5.672-5.664c0,0-3.18,3.18-6.312,6.312V0h-8.023v16.664l-6.32-6.32L0,16.016L16,32
+                                    L32,16.016z"/>
+                            </g>
                         </g>
-                    </g>
-                    </svg>
-                </div>
-            </a>  
+                        </svg>
+                    </div>
+                </a>  
+            </div>
         </div>
     </header>
+
     <div id="element_1" class="element flex flex-col md:flex-row justify-center md:mt-[10rem] mt-[5rem]">
         <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] pb-0 mb-[2rem] md:mb-[3rem] bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2px">
             <img class="shadow z-40 border-8 border-white" src="{{ asset('storage/assets/img/beer09.jpg')}}" alt="">

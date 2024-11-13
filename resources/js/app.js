@@ -4,7 +4,7 @@ var elements;
 var count = 0;
 var contador = 1;
 window.addEventListener('resize', function(){
-    if(!isMobile())
+    //if(!isMobile())
         elementsPos();
 })
 window.addEventListener('scroll', function(){
@@ -27,117 +27,142 @@ document.addEventListener("DOMContentLoaded", function(){
 function elementsPos(){
     var hScreen = window.innerHeight; 
     var wScreen = window.innerWidth;
-    elements = [
-        {
-            "image": 'mexeripa01.png',
-            "top":50,
-            "left":280,
-            "width": 515,
-            "height": 488,
-            'pos': 'right'
-        },
-        {
-            "image": 'mel01.png',
-            "top":1000,
-            "left":0,
-            "width": 540,
-            "height": 440,
-            'pos': 'left'
-        },
-        {
-            "image": 'beer_transparent_03.png',
-            "top":800,
-            "left":100,
-            "width": 200,
-            "height": 200,
-            'pos': 'right'
-        },
-        {
-            "image": 'beer_transparent.png',
-            "top":1680,
-            "left":-150,
-            "width": 320,
-            "height": 320,
-            'pos': 'left'
-        },
-        {
-            "image": 'dark-choc.png',
-            "top":1900,
-            "left":500,
-            "width": 478,
-            "height": 304,
-            'pos': 'right'
-        },
-        {
-            "image": 'batata.png',
-            "top":2410,
-            "left":200,
-            "width": 301,
-            "height": 380,
-            "pos": "right",
-        },
-        {
-            "image": 'beer-side.png',
-            "top":3160,
-            "left":-200,
-            "width": 514,
-            "height": 458,
-            "pos": "left",
-        },
-        {
-            "image": 'abridor.png',
-            "top":3600,
-            "left":280,
-            "width": 243,
-            "height": 297,
-            "pos": "right"
-        },
-        // {
-        //     "image": 'chips.png',
-        //     "top":1280,
-        //     "left":-250,
-        //     "width": 582,
-        //     "height": 592,
-        //     'pos': 'left'
-        // },
-        
-        // {
-        //     "image": 'abridor.png',
-        //     "top":hScreen+1280,
-        //     "left":50,
-        //     "width": 243,
-        //     "height": 297
-        // },
-        // {
-        //     "image": 'beer_transparent.png',
-        //     "top":hScreen+1650,
-        //     "left":180,
-        //     "width": 320,
-        //     "height": 320
-        // },
-        // {
-        //     "image": 'batata.png',
-        //     "top":hScreen+2100,
-        //     "left":100,
-        //     "width": 301,
-        //     "height": 380
-        // },
-        // {
-        //     "image": 'castanha_01.png',
-        //     "top":hScreen+2500,
-        //     "left":180,
-        //     "width": 205,
-        //     "height": 256
-        // },
-        // {
-        //     "image": 'batata-single.png',
-        //     "top":hScreen+2800,
-        //     "left":0,
-        //     "width": 282,
-        //     "height": 242
-        // },
-        
-    ];
+    if(!isMobile()){
+        elements = [
+            {
+                "image": 'mexeripa01.png',
+                "top":50,
+                "left":280,
+                "width": 515,
+                "height": 488,
+                'pos': 'right'
+            },
+            {
+                "image": 'mel01.png',
+                "top":1000,
+                "left":0,
+                "width": 540,
+                "height": 440,
+                'pos': 'left'
+            },
+            {
+                "image": 'beer_transparent_03.png',
+                "top":800,
+                "left":100,
+                "width": 200,
+                "height": 200,
+                'pos': 'right'
+            },
+            {
+                "image": 'beer_transparent.png',
+                "top":1680,
+                "left":-150,
+                "width": 320,
+                "height": 320,
+                'pos': 'left'
+            },
+            {
+                "image": 'dark-choc.png',
+                "top":1900,
+                "left":500,
+                "width": 478,
+                "height": 304,
+                'pos': 'right'
+            },
+            {
+                "image": 'batata.png',
+                "top":2410,
+                "left":200,
+                "width": 301,
+                "height": 380,
+                "pos": "right",
+            },
+            {
+                "image": 'beer-side.png',
+                "top":3160,
+                "left":-200,
+                "width": 514,
+                "height": 458,
+                "pos": "left",
+            },
+            {
+                "image": 'abridor.png',
+                "top":3600,
+                "left":280,
+                "width": 243,
+                "height": 297,
+                "pos": "right"
+            }
+        ];
+    }else{
+        elements = [
+            {
+                "image": 'mexeripa01.png',
+                "top":50,
+                "left":280,
+                "width": 515,
+                "height": 488,
+                'pos': 'right'
+            },
+            {
+                "image": 'mel01.png',
+                "top":1000,
+                "left":0,
+                "width": 540,
+                "height": 440,
+                'pos': 'left'
+            },
+            {
+                "image": 'beer_transparent_03.png',
+                "top":800,
+                "left":100,
+                "width": 200,
+                "height": 200,
+                'pos': 'right'
+            },
+            {
+                "image": 'beer_transparent.png',
+                "top":1680,
+                "left":-150,
+                "width": 320,
+                "height": 320,
+                'pos': 'left'
+            },
+            {
+                "image": 'dark-choc.png',
+                "top":1900,
+                "left":500,
+                "width": 478,
+                "height": 304,
+                'pos': 'right'
+            },
+            {
+                "image": 'batata.png',
+                "top":2410,
+                "left":200,
+                "width": 301,
+                "height": 380,
+                "pos": "right",
+            },
+            {
+                "image": 'beer-side.png',
+                "top":3160,
+                "left":-200,
+                "width": 514,
+                "height": 458,
+                "pos": "left",
+            },
+            {
+                "image": 'abridor.png',
+                "top":3600,
+                "left":280,
+                "width": 243,
+                "height": 297,
+                "pos": "right"
+            }
+        ];
+    }
+    
     for (let i = 0; i < elements.length; i++) {
         let el = document.createElement('div');
         el.className = 'elements'
