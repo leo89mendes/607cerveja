@@ -2,3 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+
+.btn_top{
+    animation: fadeIn 2s infinite ease-in-out 0s;
+}
+.shadow{
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,1);
+}
+.element{
+    opacity: 0;
+}
+@keyframes fadeIn {
+    0% { opacity: 0.3 }
+    100% { opacity: 1 }
+}

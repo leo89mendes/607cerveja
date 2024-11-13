@@ -28,7 +28,7 @@
         @vite('resources/css/app.css')
     </head>
 
-    <body class="antialiased">
+    <body id="body" class="antialiased overflow-x-hidden bg-black" style="background-image: url('storage/assets/img/bg.jpg')">
         {{ $slot }}
 
         @livewire('notifications')
