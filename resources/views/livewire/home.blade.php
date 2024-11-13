@@ -11,7 +11,7 @@
                 <img class="h-[200px] md:my-8 my-4" src="{{ asset('storage/assets/img/logo_white.png')}}" alt="">
             </div>
             <div class="z-10 h-full flex flex-col items-center w-full md:justify-center sm:justify-normal text-white my-12">
-                <cite class="text-[2.5rem] line text-sm leading-[3.5rem] text-center md:mx-[8rem] mx-4">
+                <cite class="text-[2.5rem] line leading-[3.5rem] text-center md:mx-[8rem] mx-4">
                     "Acreditamos que os momentos mais especiais são vividos juntos. 
                     É por isso que nos empenhamos em oferecer experiências inesquecíveis"
                 </cite>
