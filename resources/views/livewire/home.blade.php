@@ -16,7 +16,7 @@
                     É por isso que nos empenhamos em oferecer experiências inesquecíveis"
                 </cite> 
             </div>
-            <a id="top" href="#totop" class="max-w-[70px] btn_top bg-[#ffc123] z-10 md:mb-10 mb-16 rounded-full">
+            <a id="top" href="#totop" class="max-w-[70px] btn_top bg-[#ffc123] z-10 md:mb-10 mb-[5rem] rounded-full">
                 <div class="arrow p-2 h-[70px] w-[70px]">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                         viewBox="0 0 32 32" xml:space="preserve">
@@ -33,8 +33,8 @@
     </header>
 
     <div id="element_1" class="element flex flex-col md:flex-row justify-center md:mt-[10rem] mt-[7rem]">
-        <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] pb-0 mb-[2rem] md:mb-[3rem] bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2px">
-            <img class="shadow z-40 border-8 border-white" src="{{ asset('storage/assets/img/beer09.jpg')}}" alt="">
+        <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2px">
+            <img class="shadow z-40 border-8 border-white h-full" src="{{ asset('storage/assets/img/beer09.jpg')}}" alt="">
         </div>
         <div class="flex flex-col text-white px-[3rem] md:w-6/12 w-full justify-center md:text-left text-center">
             <h1 class="text-[#ffc123] font-semibold text-[2rem]">MEXIRIPA<h1>
@@ -53,7 +53,7 @@
     </div>
 
     <div id="element_2" class="element flex flex-col md:flex-row  justify-center md:my-[10rem] Z-40 my-[5rem]">
-        <div class="md:hidden flex md:w-6/12 w-full md:p-[3rem] p-[2rem] pb-0 mb-[2rem] md:mb-[3rem] h-full bg-no-repeat items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2p">
+        <div class="md:hidden flex md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] h-full bg-no-repeat items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2p">
             <img class="shadow border-8 border-white" src="{{ asset('storage/assets/img/beer01.jpg')}}" alt="">
         </div>
         <div class="flex  flex-col text-white px-[3rem] md:w-6/12 w-full justify-center md:text-left text-center">
@@ -70,13 +70,13 @@
             </p>
             <button class=" mt-4 max-w-[180px] md:mx-0 mx-auto p-4 !cursor-pointer hover:bg-black hover:border-[#ffc123] border-[#ffc123] border hover:text-white  bg-[#ffc123] font-semibold text-black text-[1rem]" >COMPRAR</button>
         </div>
-        <div class="md:flex hidden md:w-6/12 w-full md:p-[3rem] p-[2rem] pb-0 h-full bg-no-repeat items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: 10px -2px">
+        <div class="md:flex hidden md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 h-full bg-no-repeat items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: 10px -2px">
             <img class="shadow border-8 border-white" src="{{ asset('storage/assets/img/beer01.jpg')}}" alt="">
         </div>
     </div>
 
     <div id="element_3" class="element flex flex-col md:flex-row justify-center">
-        <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] pb-0 mb-[2rem] md:mb-[3rem] h-full bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2px">
+        <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] h-full bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2px">
             <img class="shadow border-8 border-white" src="{{ asset('storage/assets/img/beer06.jpg')}}" alt="">
         </div>
         <div class="flex flex-col text-white px-[3rem] md:w-6/12 w-full justify-center md:text-left text-center">
