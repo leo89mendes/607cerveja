@@ -3,11 +3,10 @@ import anime from 'animejs/lib/anime.es.js';
 let elements;
 var count = 0;
 var contador = 1;
-var active = true;
 elements = [
     {
         "image": 'mexeripa01.png',
-        "top":-80,
+        "top":0,
         "left":280,
         "width": 515,
         "height": 488,
@@ -15,7 +14,7 @@ elements = [
     },
     {
         "image": 'beer_transparent_03.png',
-        "top":650,
+        "top":770,
         "left":100,
         "width": 200,
         "height": 200,
@@ -23,7 +22,7 @@ elements = [
     },
     {
         "image": 'mel01.png',
-        "top":850,
+        "top":915,
         "left":0,
         "width": 540,
         "height": 440,
@@ -31,7 +30,7 @@ elements = [
     },
     {
         "image": 'beer_transparent.png',
-        "top":1500,
+        "top":1570,
         "left":-150,
         "width": 320,
         "height": 320,
@@ -39,15 +38,15 @@ elements = [
     },
     {
         "image": 'dark-choc.png',
-        "top":1705,
+        "top":1800,
         "left":500,
-        "width": 478,
-        "height": 304,
+        "width": 409,
+        "height": 225,
         'pos': 'right'
     },
     {
         "image": 'batata.png',
-        "top":2210,
+        "top":2250,
         "left":200,
         "width": 301,
         "height": 380,
@@ -55,7 +54,7 @@ elements = [
     },
     {
         "image": 'beer-side.png',
-        "top":2930,
+        "top":3000,
         "left":-200,
         "width": 514,
         "height": 458,
@@ -71,24 +70,26 @@ elements = [
     }
 ];
 window.addEventListener('resize', function(){
-    positionsEl();
+   // positionsEl();
 })
-var firstEl = document.getElementById('element_1').offsetHeight;
-window.addEventListener('scroll', function(){
+var winH = window.innerHeight;
+
+window.addEventListener('scroll', function(){    
+    console.log(window.innerHeight)
     if(elements[count] != undefined)
     {
-        var elH = (firstEl + elements[count].top) - 200;
-        var _top = firstEl + elements[count].top;
-        if(window.scrollY > elH  && count < elements.length && active)
+        var elH = Math.floor( winH + elements[count].top);
+        var _top =  window.scrollY;
+        if(_top > elH - (winH / 2)  && count < elements.length)
         {
-            elementsPos(document.createElement('div'), window.screen.width, _top)
+            elementsPos(document.createElement('div'), window.innerWidth, elH)
         };
     }
     if(document.getElementById('element_'+contador) != undefined){
         var Elcontainer = document.getElementById('element_'+contador);
-        var _height = contador > 0 ? (Math.floor(Elcontainer.getBoundingClientRect().top) + window.scrollY) - 200 : window.screen.height - 200;
+        var _height = contador > 0 ? getElementYPosition(Elcontainer) : window.innerHeight;
 
-        if( window.scrollY >= _height && document.querySelectorAll('.element').length >= contador && active)
+        if( window.scrollY >= (_height - (winH / 2)) && document.querySelectorAll('.element').length >= contador)
         {
             fadeIn(document.getElementById('element_'+contador));
         }
@@ -97,7 +98,8 @@ window.addEventListener('scroll', function(){
 function elementsPos(el, _w, _h){
     el.id = 'el_'+count;
     el.className = 'elements';
-    document.getElementById('body').appendChild(el);
+    console.log(el)
+    document.getElementById('container').appendChild(el);
     el.style.opacity = 0;
     el.style.position = "absolute";
     el.style.backgroundImage = "url(/storage/assets/img/" + elements[count].image + ")"; 
@@ -111,9 +113,11 @@ function elementsPos(el, _w, _h){
 function positionsEl(){
     var hScreen = window.screen.availHeight;
     var wScreen = window.screen.availWidth;
+    
     for (let i = 0; i < elements.length; i++) {
+        console.log(document.getElementById('el_'+i))
         document.getElementById('el_'+i).style.opacity = 1;
-        document.getElementById('el_'+i).style.top = elements[i].top + hScreen + 'px';
+        document.getElementById('el_'+i).style.top = hScreen + elements[i].top  + 'px';
         document.getElementById('el_'+i).style.left = elements[i].pos == 'right' ? wScreen + 'px' : -elements[i].width  +'px';
     }
 

@@ -32,7 +32,7 @@
         </div>
     </header>
 
-    <div id="element_1" class="element flex flex-col md:flex-row justify-center md:mt-[10rem] mt-[7rem]">
+    <div id="element_1" class="element flex flex-col z-10 md:flex-row justify-center my-[150px]">
         <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2px">
             <img class="shadow z-40 border-8 border-white h-full" src="{{ asset('storage/assets/img/beer09.jpg')}}" alt="">
         </div>
@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    <div id="element_2" class="element flex flex-col md:flex-row  justify-center md:my-[10rem] Z-40 my-[5rem]">
+    <div id="element_2" class="element flex flex-col md:flex-row  justify-center my-[150px]">
         <div class="md:hidden flex md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] h-full bg-no-repeat items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2p">
             <img class="shadow border-8 border-white" src="{{ asset('storage/assets/img/beer01.jpg')}}" alt="">
         </div>
@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <div id="element_3" class="element flex flex-col md:flex-row justify-center">
+    <div id="element_3" class="element flex flex-col md:flex-row justify-center my-[150px]">
         <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] h-full bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2px">
             <img class="shadow border-8 border-white" src="{{ asset('storage/assets/img/beer06.jpg')}}" alt="">
         </div>
@@ -94,7 +94,7 @@
             <button class=" mt-4 max-w-[180px] md:mx-0 mx-auto p-4 !cursor-pointer hover:bg-black hover:border-[#ffc123] border-[#ffc123] border hover:text-white  bg-[#ffc123] font-semibold text-black text-[1rem]" >COMPRAR</button>
         </div>
     </div>
-    <section id="element_4" id="client" class="element w-full bg-center mt-[10rem]" style="background-image: url({{ asset('storage/assets/img/tapbeerjpg.jpg') }}">
+    <section id="element_4" id="client" class="element w-full bg-center my-[150px]" style="background-image: url({{ asset('storage/assets/img/tapbeerjpg.jpg') }}">
         <div class="max-w-screen-xl px-4 py-20 mx-auto text-center lg:py-16 lg:px-6">
             <figure class="max-w-screen-md mx-auto">
                 <svg class="h-12 mx-auto mb-3 text-[#ffc123]" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +113,7 @@
             </figure>
         </div>
     </section>
-    <section id="element_5" class="element contact shadow_form mt-[10rem] bg-[#323438] md:py-8 py-4 px-4 rounded-[25px] md:w-6/12 md:mx-auto mx-8">
+    <section id="element_5" class="element contact shadow_form mt-[150px] bg-[#323438] md:py-8 py-4 px-4 rounded-[25px] md:w-6/12 md:mx-auto mx-8">
         <h1 class="text-[#ffc123] px-2 font-semibold text-[2rem]">FALE CONOSCO<h1>
         <form method="POST" action="" id="ContactForm" accept-charset="UTF-8" class="isolate">
             @csrf
@@ -136,7 +136,7 @@
             </div>
         </form>
     </section>
-    <div id="element_6" class="element social w-full mt-[5rem]">
+    <div id="element_6" class="element social w-full my-[50px]">
         <ul class="list-social w-full inline-flex gap-8 justify-center items-center text-center" role="list">
             <li class="list-social__item">
                 <a target="_blank" href="https://twitter.com/#" class="text-white link text-social__link hover:text-[#ffc123]">
@@ -176,7 +176,7 @@
             </li>
         </ul>
     </div>
-    <section id="contact" class="flex items-end mt-[5rem] h-[400px] justify-center bg-center bg-no-repeat" style="background-image: url({{ asset('storage/assets/img/beer_footer.png') }})">
+    <section id="contact" class="flex items-end h-[378px] justify-center bg-center bg-no-repeat" style="background-image: url({{ asset('storage/assets/img/beer_footer.png') }})">
         <div class="text-center md:texf-left md:flex px-2 py-2 w-full bg-[#000000] justify-center text-white text-[0.8rem] flex-row">
             Todos os Diretos Reservados à 607 Cerveja Artesanal <span class="mx-1">| Desenvolvido por </span><a class=" cursor-pointer hover:underline" href="https://dreamsintocodes.com" target="_blank"><b>Dreams Into Codes</b></a>
         </div>
