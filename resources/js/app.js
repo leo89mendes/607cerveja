@@ -3,90 +3,178 @@ import anime from 'animejs/lib/anime.es.js';
 var elements;
 var Elcontainer;
 var contador = 1;
-elements = {
-    'element_1':
-    {
-        'el_0':{
-            "image": 'mexeripa01.png',
-            "top":0,
-            "left":180,
-            "width": 488,
-            "height": 440,
-            'pos': 'right'
+if(isMobile()){
+    elements = {
+        'element_1':
+        {
+            'el_0':{
+                "image": 'mexeripa01_mobile.png',
+                "top":-100,
+                "left":100,
+                "width": 258,
+                "height": 244,
+                'pos': 'right'
+            },
+            'el_1':{
+                "image": 'beer_transparent_mobile.png',
+                "top":470,
+                "left":-75,
+                "width": 150,
+                "height": 160,
+                'pos': 'left'
+            }
+            
         },
-        'el_1':{
-            "image": 'beer_transparent.png',
-            "top":600,
-            "left":130,
-            "width": 320,
-            "height": 320,
-            'pos': 'right'
-        }
-        
-    },
-    'element_2':
-    {
-        'el_2':{
-            "image": 'mel01.png',
-            "top":-150,
-            "left":0,
-            "width": 540,
-            "height": 440,
-            'pos': 'left'
+        'element_2':
+        {
+            'el_2':{
+                "image": 'mel01_mobile.png',
+                "top":-195,
+                "left":0,
+                "width": 253,
+                "height": 206,
+                'pos': 'left'
+            },
+            'el_3':{
+                "image": 'beer_transparent_03.png',
+                "top":455,
+                "left":50,
+                "width": 200,
+                "height": 200,
+                'pos': 'right'
+            },
         },
-        'el_3':{
-            "image": 'beer_transparent_03.png',
-            "top":550,
-            "left":-100,
-            "width": 200,
-            "height": 200,
-            'pos': 'left'
+        'element_3':
+        {
+            'el_4':{
+                "image": 'dark-choc_mobile.png',
+                "top":-130,
+                "left":100,
+                "width": 242,
+                "height": 137,
+                'pos': 'left'
+            },
+            'el_5':{
+                "image": 'batata_mobile.png',
+                "top":600,
+                "left":80,
+                "width": 198,
+                "height": 250,
+                'pos': 'right'
+            },
         },
-    },
-    'element_3':
-    {
-        'el_4':{
-            "image": 'dark-choc.png',
-            "top":-70,
-            "left":500,
-            "width": 409,
-            "height": 225,
-            'pos': 'right'
+        'element_4':
+        {
         },
-        'el_5':{
-            "image": 'batata.png',
-            "top":400,
-            "left":150,
-            "width": 301,
-            "height": 380,
-            'pos': 'right'
+        'element_5':
+        {
+            'el_6':{
+                "image": 'beer-side_mobile.png',
+                "top":-140,
+                "left":-100,
+                "width": 178,
+                "height": 133,
+                "pos": "left",
+            },
+            'el_7':{
+                "image": 'abridor_mobile.png',
+                "top":480,
+                "left":180,
+                "width": 150,
+                "height": 184,
+                "pos": "right"
+            },
         },
-    },
-    'element_4':
-    {
-    },
-    'element_5':
-    {
-        'el_6':{
-            "image": 'beer-side.png',
-            "top":0,
-            "left":-500,
-            "width": 514,
-            "height": 322,
-            "pos": "left",
+        'element_6':
+        {
         },
-        'el_7':{
-            "image": 'abridor.png',
-            "top":300,
-            "left":600,
-            "width": 243,
-            "height": 297,
-            "pos": "right"
+    }
+}else{
+    elements = {
+        'element_1':
+        {
+            'el_0':{
+                "image": 'mexeripa01.png',
+                "top":0,
+                "left":180,
+                "width": 488,
+                "height": 440,
+                'pos': 'right'
+            },
+            'el_1':{
+                "image": 'beer_transparent.png',
+                "top":600,
+                "left":130,
+                "width": 320,
+                "height": 320,
+                'pos': 'right'
+            }
+            
         },
-    },
-    'element_6':
-    {
-    },
+        'element_2':
+        {
+            'el_2':{
+                "image": 'mel01.png',
+                "top":-150,
+                "left":0,
+                "width": 540,
+                "height": 440,
+                'pos': 'left'
+            },
+            'el_3':{
+                "image": 'beer_transparent_03.png',
+                "top":550,
+                "left":-100,
+                "width": 200,
+                "height": 200,
+                'pos': 'left'
+            },
+        },
+        'element_3':
+        {
+            'el_4':{
+                "image": 'dark-choc.png',
+                "top":-70,
+                "left":500,
+                "width": 409,
+                "height": 225,
+                'pos': 'right'
+            },
+            'el_5':{
+                "image": 'batata.png',
+                "top":400,
+                "left":150,
+                "width": 301,
+                "height": 380,
+                'pos': 'right'
+            },
+        },
+        'element_4':
+        {
+        },
+        'element_5':
+        {
+            'el_6':{
+                "image": 'beer-side.png',
+                "top":0,
+                "left":-500,
+                "width": 514,
+                "height": 322,
+                "pos": "left",
+            },
+            'el_7':{
+                "image": 'abridor.png',
+                "top":300,
+                "left":600,
+                "width": 243,
+                "height": 297,
+                "pos": "right"
+            },
+        },
+        'element_6':
+        {
+        },
+    }
 }
 
 window.addEventListener('scroll', function(){   
