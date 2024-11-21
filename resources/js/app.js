@@ -56,7 +56,7 @@ if(isMobile()){
             },
             'el_5':{
                 "image": 'batata_mobile.png',
-                "top":610,
+                "top":625,
                 "left":80,
                 "width": 198,
                 "height": 250,
