@@ -56,7 +56,7 @@ if(isMobile()){
             },
             'el_5':{
                 "image": 'batata_mobile.png',
-                "top":600,
+                "top":610,
                 "left":80,
                 "width": 198,
                 "height": 250,
@@ -79,7 +79,7 @@ if(isMobile()){
             'el_7':{
                 "image": 'abridor_mobile.png',
                 "top":480,
-                "left":180,
+                "left":150,
                 "width": 150,
                 "height": 184,
                 "pos": "right"
