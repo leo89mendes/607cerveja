@@ -1,145 +1,145 @@
 import anime from 'animejs/lib/anime.es.js';
 
-let elements;
-var count = 0;
+var elements;
+var Elcontainer;
 var contador = 1;
-elements = [
+elements = {
+    'element_1':
     {
-        "image": 'mexeripa01.png',
-        "top":0,
-        "left":280,
-        "width": 515,
-        "height": 488,
-        'pos': 'right'
+        'el_0':{
+            "image": 'mexeripa01.png',
+            "top":0,
+            "left":180,
+            "width": 488,
+            "height": 440,
+            'pos': 'right'
+        },
+        'el_1':{
+            "image": 'beer_transparent.png',
+            "top":600,
+            "left":130,
+            "width": 320,
+            "height": 320,
+            'pos': 'right'
+        }
+        
     },
+    'element_2':
     {
-        "image": 'beer_transparent_03.png',
-        "top":770,
-        "left":100,
-        "width": 200,
-        "height": 200,
-        'pos': 'right'
+        'el_2':{
+            "image": 'mel01.png',
+            "top":-150,
+            "left":0,
+            "width": 540,
+            "height": 440,
+            'pos': 'left'
+        },
+        'el_3':{
+            "image": 'beer_transparent_03.png',
+            "top":550,
+            "left":-100,
+            "width": 200,
+            "height": 200,
+            'pos': 'left'
+        },
     },
+    'element_3':
     {
-        "image": 'mel01.png',
-        "top":915,
-        "left":0,
-        "width": 540,
-        "height": 440,
-        'pos': 'left'
+        'el_4':{
+            "image": 'dark-choc.png',
+            "top":-70,
+            "left":500,
+            "width": 409,
+            "height": 225,
+            'pos': 'right'
+        },
+        'el_5':{
+            "image": 'batata.png',
+            "top":400,
+            "left":150,
+            "width": 301,
+            "height": 380,
+            'pos': 'right'
+        },
     },
+    'element_4':
     {
-        "image": 'beer_transparent.png',
-        "top":1570,
-        "left":-150,
-        "width": 320,
-        "height": 320,
-        'pos': 'left'
     },
+    'element_5':
     {
-        "image": 'dark-choc.png',
-        "top":1800,
-        "left":500,
-        "width": 409,
-        "height": 225,
-        'pos': 'right'
+        'el_6':{
+            "image": 'beer-side.png',
+            "top":0,
+            "left":-500,
+            "width": 514,
+            "height": 322,
+            "pos": "left",
+        },
+        'el_7':{
+            "image": 'abridor.png',
+            "top":300,
+            "left":600,
+            "width": 243,
+            "height": 297,
+            "pos": "right"
+        },
     },
+    'element_6':
     {
-        "image": 'batata.png',
-        "top":2250,
-        "left":200,
-        "width": 301,
-        "height": 380,
-        "pos": "right",
     },
-    {
-        "image": 'beer-side.png',
-        "top":3000,
-        "left":-200,
-        "width": 514,
-        "height": 458,
-        "pos": "left",
-    },
-    {
-        "image": 'abridor.png',
-        "top":3420,
-        "left":280,
-        "width": 243,
-        "height": 297,
-        "pos": "right"
-    }
-];
-window.addEventListener('resize', function(){
-   // positionsEl();
-})
-var winH = window.innerHeight;
+}
 
-window.addEventListener('scroll', function(){    
-    console.log(window.innerHeight)
-    if(elements[count] != undefined)
-    {
-        var elH = Math.floor( winH + elements[count].top);
-        var _top =  window.scrollY;
-        if(_top > elH - (winH / 2)  && count < elements.length)
-        {
-            elementsPos(document.createElement('div'), window.innerWidth, elH)
-        };
-    }
+window.addEventListener('scroll', function(){   
+    var winH = window.innerHeight; 
     if(document.getElementById('element_'+contador) != undefined){
-        var Elcontainer = document.getElementById('element_'+contador);
+        Elcontainer = document.getElementById('element_'+contador);
+        Elcontainer.style.opacity = 0;
         var _height = contador > 0 ? getElementYPosition(Elcontainer) : window.innerHeight;
-
-        if( window.scrollY >= (_height - (winH / 2)) && document.querySelectorAll('.element').length >= contador)
+        if( window.scrollY >= (_height - (winH / 3)) && document.querySelectorAll('.element').length >= contador)
         {
-            fadeIn(document.getElementById('element_'+contador));
+            fadeIn(Elcontainer);
+            elementsPos(Elcontainer);
         }
     }
 })
-function elementsPos(el, _w, _h){
-    el.id = 'el_'+count;
-    el.className = 'elements';
-    console.log(el)
-    document.getElementById('container').appendChild(el);
-    el.style.opacity = 0;
-    el.style.position = "absolute";
-    el.style.backgroundImage = "url(/storage/assets/img/" + elements[count].image + ")"; 
-    el.style.backgroundRepeat = "no-repeat";
-    el.style.top = _h  + 'px';
-    el.style.left = elements[count].pos == 'right' ? _w + 'px' : -elements[count].width  +'px';
-    el.style.width = elements[count].width + 'px';
-    el.style.height = elements[count].height + 'px';
-    animeEl(el)
-}
-function positionsEl(){
-    var hScreen = window.screen.availHeight;
-    var wScreen = window.screen.availWidth;
+function elementsPos(el){
+    Object.keys(elements[el.id]).forEach(key => {
+        var ele = document.createElement('div');
+        el.appendChild(ele);
+        ele.id = key;
+        ele.className = 'elements';
+        ele.style.position = "absolute";
+        ele.style.backgroundImage = "url(/storage/assets/img/" + elements[el.id][key].image + ")"; 
+        ele.style.backgroundRepeat = "no-repeat";
+        ele.style.width = elements[el.id][key].width + 'px';
+        ele.style.height = elements[el.id][key].height + 'px';
+        ele.style.top = elements[el.id][key].top  + 'px';
+        if(elements[el.id][key].pos == 'right')
+            ele.style.left = (window.innerWidth - elements[el.id][key].left) + 'px';
+        else
+            ele.style.left = elements[el.id][key].left + 'px';
+        
+        animeEl(ele, elements[el.id][key].pos)
+    });
     
-    for (let i = 0; i < elements.length; i++) {
-        console.log(document.getElementById('el_'+i))
-        document.getElementById('el_'+i).style.opacity = 1;
-        document.getElementById('el_'+i).style.top = hScreen + elements[i].top  + 'px';
-        document.getElementById('el_'+i).style.left = elements[i].pos == 'right' ? wScreen + 'px' : -elements[i].width  +'px';
-    }
-
 }
-function animeEl(el){
-    var move = elements[count].pos == 'right' ? window.innerWidth - elements[count].left : elements[count].left;
-    anime({
+function animeEl(el, pos){
+    var move = pos == "left"  ? -1000 : (window.innerWidth*2);
+    var motions = anime({
         targets: el,
-        left: move,
-        duration: 2000,
+        left: [move, el.style.left],
+        duration: 1000,
         scale: [0, 1],
         opacity: 1,
-        easing: 'spring(1, 80, 10, 0)',
+        easing: 'spring(1, 70, 40, 0)',
     });
-    count+=1
 }
 function fadeIn(el){
     anime({
         targets: el,
         duration: 100,
         scale: [0, 1],
-        opacity: [0 , 1],
+        opacity: 1,
         easing: 'spring(1, 80, 10, 0)',
     });
     contador+=1

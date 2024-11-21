@@ -1,4 +1,4 @@
-<div id="container" class="w-full !overflow-x-hidden">
+<div id="container" class="w-screen !overflow-x-hidden">
     <header id="header">
         <div class="video-background">
             <video class="gfade grayscale aspect-video" width="100%" autoplay muted loop playsinline>
@@ -31,9 +31,8 @@
             </a> 
         </div>
     </header>
-
     <div id="element_1" class="element flex flex-col z-10 md:flex-row justify-center my-[150px]">
-        <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2px">
+        <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: top right">
             <img class="shadow z-40 border-8 border-white h-full" src="{{ asset('storage/assets/img/beer09.jpg')}}" alt="">
         </div>
         <div class="flex flex-col text-white px-[3rem] md:w-6/12 w-full justify-center md:text-left text-center">
@@ -51,9 +50,8 @@
             <button class=" mt-4 max-w-[180px] md:mx-0 mx-auto p-4 !cursor-pointer hover:bg-black hover:border-[#ffc123] border-[#ffc123] border hover:text-white  bg-[#ffc123] font-semibold text-black text-[1rem]" >COMPRAR</button>
         </div>
     </div>
-
     <div id="element_2" class="element flex flex-col md:flex-row  justify-center my-[150px]">
-        <div class="md:hidden flex md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] h-full bg-no-repeat items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2p">
+        <div class="md:hidden flex md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] h-full bg-no-repeat items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: top left">
             <img class="shadow border-8 border-white" src="{{ asset('storage/assets/img/beer01.jpg')}}" alt="">
         </div>
         <div class="flex  flex-col text-white px-[3rem] md:w-6/12 w-full justify-center md:text-left text-center">
@@ -74,9 +72,8 @@
             <img class="shadow border-8 border-white" src="{{ asset('storage/assets/img/beer01.jpg')}}" alt="">
         </div>
     </div>
-
     <div id="element_3" class="element flex flex-col md:flex-row justify-center my-[150px]">
-        <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] h-full bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: -22px -2px">
+        <div class="md:w-6/12 w-full md:p-[3rem] p-[2rem] !pb-0 mb-[2rem] md:mb-[3rem] h-full bg-no-repeat flex items-center justify-center" style="background-image: url({{ asset('storage/assets/img/left-tree.png') }}); background-position: top right">
             <img class="shadow border-8 border-white" src="{{ asset('storage/assets/img/beer06.jpg')}}" alt="">
         </div>
         <div class="flex flex-col text-white px-[3rem] md:w-6/12 w-full justify-center md:text-left text-center">
