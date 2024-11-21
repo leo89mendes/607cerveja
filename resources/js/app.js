@@ -17,7 +17,7 @@ if(isMobile()){
             },
             'el_1':{
                 "image": 'beer_transparent_mobile.png',
-                "top":470,
+                "top":480,
                 "left":-75,
                 "width": 150,
                 "height": 160,
